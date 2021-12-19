@@ -1,0 +1,107 @@
+.Login_inner {
+  padding: 50px 0 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Login_inner h2 {
+  position: relative;
+  font-size: 40px;
+  font-weight: 300;
+  color: #1d1337;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.Login_inner h2:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 2px;
+  background: #673ab7;
+}
+
+.Login {
+  width: 50%;
+  border-radius: 5px;
+  padding: 40px 75px 75px 75px;
+  background: #fff;
+  box-shadow: 0 3px 4px #00000029;
+}
+
+.Login form {
+  border-bottom: 1px solid #673ab7;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.Form_group {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.Form_group > div {
+  width: 48%
+}
+
+.Form_actions {
+  padding-top: 15px;
+}
+
+.SSO button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  background: #673ab7;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.SSO button span {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.SSO button:hover {
+  background: #512da8;
+}
+
+.Success {
+  padding: 10px 0;
+  text-align: center;
+  background: #2e7d32;
+  color: #fff;
+  border-radius: 5px;
+  opacity: 0;
+  animation-name: nice;
+  animation-duration: 3s;
+  transition: .2s;
+}
+
+.Red {
+  background: #d32f2f !important;
+}
+
+@keyframes nice {
+  0%   {opacity: 1;}
+  50%   {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.Shide {
+  opacity: 0;
+}

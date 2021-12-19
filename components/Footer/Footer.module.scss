@@ -1,0 +1,20 @@
+.Footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: #673ab7;
+  display: flex;
+  justify-content: center;
+}
+
+.Footer_inner {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.Footer_inner p {
+  color: #fff;
+}

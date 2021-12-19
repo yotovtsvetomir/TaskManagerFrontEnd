@@ -1,0 +1,237 @@
+.Projects_wrapper {
+  margin-top: 50px;
+  border-radius: 5px;
+  padding: 40px 75px 75px 75px;
+  background: #fafafa;
+  box-shadow: 0 3px 4px #00000029;
+  min-height: 500px;
+}
+
+.Dim:after {
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Projects_wrapper h1 {
+  position: relative;
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-weight: 300;
+  color: #1d1337;
+}
+
+.Projects_wrapper h1:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: #673ab7;
+}
+
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Project {
+  display: block;
+  width: 31%;
+  box-sizing: border-box;
+  padding: 20px 20px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px #00000029;
+  text-decoration: none;
+  color: rgba(0,0,0, .87);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  transition: .2s;
+}
+
+.Project:hover {
+  background: #eee;
+}
+
+.Project:nth-child(3) {
+  margin-right: 0;
+}
+
+.Project_image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.Project_image h2 {
+  font-size: 20px;
+}
+
+.Project_image svg {
+  fill: #673ab7;
+}
+
+.Project_divide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Project_divide p {
+  height: 1.2em;
+  font-weight: 300;
+}
+
+.Project_divide p:nth-child(2) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 90px;
+  height: 1.2em;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.AddProject {
+  position: relative;
+  width: 31%;
+  min-height: 166px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px #00000029;
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.Open {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0 40px 0;
+  width: 500px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: auto;
+}
+
+.Open svg {
+  display: none;
+}
+
+.Open:hover {
+  background: #fff !important;
+}
+
+.Open > span {
+  display: none;
+}
+
+.Open span {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+.Open h2 {
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 300;
+  color: #1d1337;
+}
+
+.Form_actions {
+  margin-top: 40px;
+}
+
+.Hide {
+  display: none;
+}
+
+.AddProject:hover {
+  background: #eee;
+}
+
+.AddProject svg {
+  fill: #673ab7;
+  width: 70px;
+  height: 70px;
+}
+
+.AddProject span {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .2s;
+}
+
+.Toggle {
+  bottom: 20px !important;
+}
+
+.AddProject_form {
+  position: relative;
+}
+
+.Close {
+  position: absolute;
+  top: -50px;
+  right: -90px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.Close svg {
+  display: block !important;
+  width: 30px;
+  height: 30px;
+}
+
+.Project_actions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Project_actions a {
+  display: block;
+  text-decoration: none;
+  color: #673ab7;
+}
+
+.Project_actions button {
+  display: block;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.Project_actions button svg {
+  fill: #7f0000;
+}
+
+.Confirm {
+  color: #7f0000;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main{
+  display: block;
+}
+
+body{
+  line-height: 1;
+  height: 100%;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
+  background: #e0def8;
+}
+
+ol, ul{
+  list-style: none;
+}
+
+blockquote, q{
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after{
+  content: '';
+  content: none;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input{
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: #000;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+.Shell {
+  padding: 0 16px;
+  @media (min-width: 768px) {
+    padding: 0 24px;
+    margin: 0 auto;
+  }
+  @media(min-width: 1024px) {
+    padding: 0 24px;
+    max-width: 1080px;
+  }
+  @media(min-width: 1441px) {
+    padding: 0 24px;
+    max-width: 1200px;
+  }
+}
+
+.Btn_login {
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  background: #673ab7;
+  transition: .2s;
+}
+
+.Btn_login span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Btn_login:hover {
+  background: #512da8;
+}

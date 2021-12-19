@@ -1,0 +1,213 @@
+.Project_wrapper {
+  position: relative;
+  margin-top: 50px;
+  border-radius: 5px;
+  padding: 40px 75px 75px 75px;
+  background: #fafafa;
+  box-shadow: 0 3px 4px #00000029;
+  min-height: 500px;
+}
+
+.Dim:after {
+  content: '';
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.Project_wrapper h1 {
+  position: relative;
+  margin-left: 30px;
+  font-size: 40px;
+  margin-bottom: 180px;
+  font-weight: 300;
+  color: #1d1337;
+}
+
+.Project_wrapper h1:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background: #673ab7;
+}
+
+.Add {
+  position: absolute;
+  top: 120px;
+  left: 105px;
+}
+
+.AddTask {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 4px #00000029;
+  border: 0;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.Open {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0 40px 0;
+  width: 500px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: auto;
+}
+
+.Open svg {
+  display: none;
+}
+
+.Open:hover {
+  background: #fff !important;
+}
+
+.Open > span {
+  display: none;
+}
+
+.Open span {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+.Open h2 {
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 300;
+  color: #1d1337;
+}
+
+.Form_actions {
+  margin-top: 40px;
+}
+
+.Hide {
+  display: none;
+}
+
+.AddTask:hover {
+  background: #eee;
+}
+
+.AddTask svg {
+  fill: #673ab7;
+  width: 70px;
+  height: 70px;
+}
+
+.AddTask span {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .2s;
+}
+
+.Toggle {
+  bottom: 20px !important;
+}
+
+.AddTask_form {
+  position: relative;
+}
+
+.Close {
+  position: absolute;
+  top: -50px;
+  right: -90px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.Close svg {
+  display: block !important;
+  width: 30px;
+  height: 30px;
+}
+
+.Project_actions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Project_actions a {
+  display: block;
+  text-decoration: none;
+  color: #673ab7;
+}
+
+.Project_actions button {
+  display: block;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.Project_actions button svg {
+  fill: #7f0000;
+}
+
+.Task {
+  position: relative;
+}
+
+.Task button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.Task button svg {
+  fill: #fff;
+}
+
+.Task p {
+  margin-bottom: 15px;
+}
+
+.Task p:nth-child(3) {
+  margin-bottom: 15px;
+}
+
+.Task span {
+  margin-right: 5px;
+}
+
+.Scr::-webkit-scrollbar {
+    display: none;
+}
+
+.Scr {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
